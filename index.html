@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Casey's Portfolio</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/lightbox.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/lightbox.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo">Project Gallery</h1>
+				<nav>
+					<ul>
+						<li><a href="#">All Projects</a></li>
+						<li><a href="#">OIT</a></li>
+						<li><a href="#">Jeld-Wen</a></li>
+						<li><a href="#">Personal/Professional</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<section id="aboutme">
+			<div class="container">
+				<h2>Hi, and welcome to my online project portfolio! My name is Casey Schurman, and below 
+				you will see a list of different projects I've worked on. Click the links at the
+				top-right to see the different categories of projects. Also, if you click a project
+				"square", it will advance you to the project outside of this website (If the project doesn't
+				have a link or isn't finished, only a picture will be displayed). I'm currently 
+				an intern at Jeld-Wen, as well as finishing my last year at Oregon Institute of 
+				Technology, getting my Bachelor's Degree in Software Engineering. At the bottom of 
+				the page I have my email address if you wish to contact me. Thank you!
+				</h2>
+			</div>
+		</section>
+		
+		<section>
+			<div class="container">
+				<h1 id="heading">All Projects</h1>
+				<ul id="gallery">
+					<li class="oit"><a href="img/JuniorProject.png" data-lightbox="projects" data-title="Junior Project" data-desc="With 4 other students, 
+						made a social network where users could store, share, and rate cooking recipes. 
+						Built with Ruby on Rails."><img src="img/JuniorProject2.png"></a></li>
+					<li class="oit"><a href="#" data-title="Senior Project" data-desc="Building an Android app that searches for 
+						volunteer opportunities in a user's area. The opportunities (Which are pulled from the VolunteerMatch API) 
+						are displayed in a list which will be by default organized by distance (in miles) from the user. "><img src="img/Android.jpg"></a></li>
+					<li class="jeld-wen"><a href="img/AutomationScript.png" data-lightbox="projects" data-title="Catalog Upload Script" data-desc="Wrote 
+						Python script which automates the catalog upload process. Builds package from TFS, 
+						prepares release notes document, and moves files into the correct directories. 
+						Wrote unit and integration tests for 100% code coverage."><img src="img/CatalogUploadPic2.png"></a></li>
+					<li class="personal/professional"><a href="https://activebuddys.net/" data-title="ActiveBuddies" data-desc="Worked with local
+						businessman to fix bugs and add features for his website, which serves to globally 
+						connect those who enjoy recreational activities. Built with PHP."><img src="img/ActiveBuddysPic.png"></a></li>
+					<li class="personal/professional"><a href="img/Dota2CounterPicker.png" data-lightbox="projects" data-title="Dota 2 Counter-Pick App" data-desc="Being built using Apache Cordova, 
+						the app allows you to select an enemy team hero, and shows best options to 
+						counter that pick, based off of current win rates of heroes."><img src="img/Dota2CounterPicker2.png"></a></li>
+				</ul>
+			</div>
+		</section>
+		
+		<footer>
+			<p>Email: casey.schurman@oit.edu</p>
+		</footer>
+	</body>
+</html>
