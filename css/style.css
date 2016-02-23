@@ -90,6 +90,7 @@ section{
 	box-sizing:border-box;
 	margin:0 12px 7px 0;
 	position:relative;
+	text-align:center;
 }
 
 #gallery img{
