@@ -1,68 +1,320 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Casey's Portfolio</title>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/lightbox.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/lightbox.js"></script>
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<h1 class="logo">Project Gallery</h1>
-				<nav>
-					<ul>
-						<li><a href="#">All Projects</a></li>
-						<li><a href="#">OIT</a></li>
-						<li><a href="#">Jeld-Wen</a></li>
-						<li><a href="#">Personal/Professional</a></li>
-					</ul>
-				</nav>
+<html lang="en"> 
+<head>
+	<title>Casey's Portfolio</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+				
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand">CS Design</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav">
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#aboutMe">About Me</a></li>
+					<li><a href="#contact">Contact</a></li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+			
+			<div class="row text-center">
+				<h1>Welcome to Casey's <span>portfolio</span> website.</h1>
+				<h3>My name is <span>Casey Schurman</span>, and this is a website I developed to show off different projects I've worked on, as well as where you can learn a little more about me and my life. Please enjoy!</h3>
 			</div>
-		</header>
-		
-		<section id="aboutme">
+		</div>
+	</div><!--End of Jumbotron-->
+	
+	<div class="passion">
+		<div class="container">
+			<div clasa="row">
+				<div class="passion-ui-design text-center">
+					<div class="col-md-4">
+						<span class="icon-sprite sprite-brush">&nbsp;</span>
+						<h4>UI Design & Development</h4>
+						<p>I'm passionate about UI Design and Development because a well designed and implemented user interface can make all the difference in making a software application successful. If it's bad, the software application will likely fail.</p>
+					</div>
+				</div>
+				<!--End of passion-ui-design-->
+				
+				<div class="passion-ui-development text-center">
+					<div class="col-md-4">
+						<span class="icon-sprite sprite-tool">&nbsp;</span>
+						<h4>Software QA & Testing</h4>
+						<p>I love QA and Testing in Software because they're similar to Ringo Starr in The Beatles. It doesn't get all of the attention and spotlight, but without it the software development process wouldn't become one of the best bands of all time (whoops, I mean wouldn't be an effective software development process).</p>
+					</div>
+				</div>
+				<!--End of passion-ui-development-->
+				
+				<div class="passion-app text-center">
+					<div class="col-md-4">
+						<span class="icon-sprite sprite-phone">&nbsp;</span>
+						<h4>Mobile App Development</h4>
+						<p>I love that with mobile application development I can have an idea for something I'd like to have on my phone, and if it isn't there, I can just create it. Depending on the complexity of the app, in a week I could have it created and working successfully on my phone. The problem will be solved, and one less thing to stress or worry about is always nice.</p>
+					</div>
+				</div>
+				<!--End of passion-app-->
+			</div>	
+		</div>
+	</div><!--End of passion--> 
+	
+	<div class="projects">
+		<div class="heading text-center">
 			<div class="container">
-				<h2>Hi, and welcome to my online project portfolio! My name is Casey Schurman, and below 
-				you will see a list of different projects I've worked on. Click the links at the
-				top-right to see the different categories of projects. Also, if you click a project
-				"square", it will advance you to the project outside of this website (If the project doesn't
-				have a link or isn't finished, only a picture will be displayed). I'm currently 
-				an intern at Jeld-Wen, as well as finishing my last year at Oregon Institute of 
-				Technology, getting my Bachelor's Degree in Software Engineering. At the bottom of 
-				the page I have my email address if you wish to contact me. Thank you!
-				</h2>
+				<div clasa="row">
+					<div class="col-md-6">
+						<a name="projects"><h1>Projects</h1></a>
+					</div>
+					<div class="col-md-6">
+						<div class="control-right">
+							<a href="https://github.com/CaseySchurman" class="btn btn-default">GitHub</a>
+						</div>
+					</div>
+				</div>	
 			</div>
-		</section>
+		</div>
+		<!--End of heading-->
 		
-		<section>
+		<div class="gallery clearfix">
+			<div class="gallery-inner">
+				<img src="images/activeBuddys.png" class="img-responsive"></img>
+				<div class="caption">
+					<div class="caption-heading visible-lg">
+						<h4>ActiveBuddys</h4>
+						<small>January 5th, 2016</small>
+					</div>
+					
+					<div class="btn-group btn-trigger" role="group" aria-label="...">
+						<a href="https://activebuddys.net/" class="btn btn-default web-link">Link</a>
+						<a href="#openModalActive" class="btn btn-default more-info">More</a>
+					</div>
+				</div><!--caption-->
+			</div>
+			
+			<div class="gallery-inner">
+				<img src="images/cookingWithEngineers.png" class="img-responsive"></img>
+				<div class="caption">
+					<div class="caption-heading visible-lg">
+						<h4>Cooking With Engineers</h4>
+						<small>June 2nd, 2015</small>
+					</div>
+					
+					<div class="btn-group btn-trigger" role="group" aria-label="...">
+						<a href="https://vast-stream-5760.herokuapp.com/" class="btn btn-default web-link">Link</a>
+						<a href="#openModalCooking" class="btn btn-default more-info">More</a>
+					</div>
+				</div><!--caption-->
+			</div>
+			
+			<div class="gallery-inner">
+				<img src="images/caseysCorner.png" class="img-responsive"></img>
+				<div class="caption">
+					<div class="caption-heading visible-lg">
+						<h4>Casey's Corner</h4>
+						<small>May 20th, 2016</small>
+					</div>
+					
+					<div class="btn-group btn-trigger" role="group" aria-label="...">
+						<a href="http://caseyschurman.github.io/CaseyCorner/" class="btn btn-default web-link">Link</a>
+						<a href="#openModalCorner" class="btn btn-default more-info">More</a>
+					</div>
+				</div><!--caption-->
+			</div>
+			
+			<div class="gallery-inner">
+				<img src="images/VoGo.png" class="img-responsive"></img>
+				<div class="caption">
+					<div class="caption-heading visible-lg">
+						<h4>VoGo</h4>
+						<small>May 18th, 2016</small>
+					</div>
+					
+					<div class="btn-group btn-trigger" role="group" aria-label="...">
+						<a href="https://github.com/CaseySchurman/VoGo_SeniorProject" class="btn btn-default web-link">Link</a>
+						<a href="#openModalVoGo" class="btn btn-default more-info">More</a>
+					</div>
+				</div><!--caption-->
+			</div>
+		</div>
+		<!--End of gallery-->
+	</div>
+	<!--End of projects-->
+	
+	<div class="about-me">
+		
+		<div class="heading">
 			<div class="container">
-				<h1 id="heading">All Projects</h1>
-				<ul id="gallery">
-					<li class="oit"><a href="img/JuniorProject.png" data-lightbox="projects" data-title="Junior Project" data-desc="With 4 other students, 
-						made a social network where users could store, share, and rate cooking recipes. 
-						Built with Ruby on Rails."><img src="img/JuniorProject2.png"></a></li>
-					<li class="oit"><a href="#" data-title="Senior Project" data-desc="Building an Android app that searches for 
-						volunteer opportunities in a user's area. The opportunities (Which are pulled from the VolunteerMatch API) 
-						are displayed in a list which will be by default organized by distance (in miles) from the user. "><img src="img/Android.jpg"></a></li>
-					<li class="jeld-wen"><a href="img/AutomationScript.png" data-lightbox="projects" data-title="Catalog Upload Script" data-desc="Wrote 
-						Python script which automates the catalog upload process. Builds package from TFS, 
-						prepares release notes document, and moves files into the correct directories. 
-						Wrote unit and integration tests for 100% code coverage."><img src="img/CatalogUploadPic2.png"></a></li>
-					<li class="personal/professional"><a href="https://activebuddys.net/" data-title="ActiveBuddies" data-desc="Worked with local
-						businessman to fix bugs and add features for his website, which serves to globally 
-						connect those who enjoy recreational activities. Built with PHP."><img src="img/ActiveBuddysPic.png"></a></li>
-					<li class="personal/professional"><a href="img/Dota2CounterPicker.png" data-lightbox="projects" data-title="Dota 2 Counter-Pick App" data-desc="Being built using Apache Cordova, 
-						the app allows you to select an enemy team hero, and shows best options to 
-						counter that pick, based off of current win rates of heroes."><img src="img/Dota2CounterPicker2.png"></a></li>
-				</ul>
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<a name="aboutMe"><h1>About Me</h1></a>
+					</div>
+				</div>
 			</div>
-		</section>
+		</div><!-- end heading -->
 		
-		<footer>
-			<p>Email: casey.schurman@oit.edu</p>
-		</footer>
-	</body>
+		<div class="container">
+			<div class="row">
+				<div id="carousel-creative-process" class="carousel slide" data-interval="false">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-creative-process" data-slide-to="0" class="active">Hobbies</li>
+				    <li data-target="#carousel-creative-process" data-slide-to="1">Food</li>
+				    <li data-target="#carousel-creative-process" data-slide-to="2">Family</li>
+					<li data-target="#carousel-creative-process" data-slide-to="3">Future</li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active text-center">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/hobbyIcon.png" alt="plan" class="hidden-xs" />
+							</div>
+							
+							<div class="col-md-6">
+								<h4>Hobbies</h4>
+								<p>I enjoy playing sports (basketball and football mainly), reading (especially non-fiction books), riding my bike, and watching certain TV shows (Game of Thrones and Silicon Valley are two of my favorites). I also enjoy playing multi-player video games. Last but not least, I love music. Not just listening to it with Vinyl or on Spotify, but also playing my guitar (when I have the time).</p>
+							</div> 
+						</div>
+				    </div><!-- end item -->
+					
+				    <div class="item text-center">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/foodIcon.png" alt="plan" class="hidden-xs" />
+							</div>
+							
+							<div class="col-md-6">
+								<h4>Food</h4>
+								<p>One of my favorite things to do is cook. Now, I'm honestly not the best cook, and I don't like spending more then half an hour preparing for a meal. But I love using my crock-pot, and I enjoy experimenting with food and making new things. I don't really have a particular favorite genre of food, I like everything from Greek food to Mexican food.</p>
+							</div> 
+						</div>
+				    </div><!-- end item -->
+					
+				    <div class="item text-center">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/familyIcon.png" alt="plan" class="hidden-xs" />
+							</div>
+							
+							<div class="col-md-6">
+								<h4>Family</h4>
+								<p>I was born and raised about 15 minutes southwest of McMinnville, Oregon on 25 acres by my mom and dad, along with my brother, who is 5 years older than me. My mom is a retired teacher, and my dad is self-employed with an antique vehicle engine restoration business, along with doing custom machine work for customers. My dad is also an OIT grad, like myself.</p>
+							</div> 
+						</div>
+				    </div><!-- end item -->
+					
+				    <div class="item text-center">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="images/futureIcon.png" alt="plan" class="hidden-xs" />
+							</div>
+							
+							<div class="col-md-6">
+								<h4>Future</h4>
+								<p>I try to keep a positive outlook on life, so no matter what comes at me I'm going to make the best of it. However, in 5 years I would like to be working for a company I enjoy, doing something I love, and hopefully start making the steps towards owning a home. I'd also like to have a nice group of friends, I've been lucky enough to be able to make friends wherever I go, so hopefully that continues.</p>
+							</div> 
+						</div>
+				    </div><!-- end item -->
+					
+				  </div>
+				</div><!-- end carousel -->
+			</div>
+		</div>
+	</div><!-- end creative-process -->
+	
+	<div class="contact-info-header">
+		<div class="container">
+			<div clasa="row text-center">
+				<h2>Do you like what you see? Feel free to <a href="mailto:csmusiclover@gmail.com" target="_top">contact me.</a></h2>
+			</div>	
+		</div>
+	</div>
+	<!--End of contact-info-header-->
+	
+	<div class="contact-info">
+		<div class="container">
+			<div clasa="row">
+				<div class="col-md-4">
+					<div class="location text-center">
+						<span class="icon-sprite sprite-loc">&nbsp;</span>
+						<a name="contact"><h6>Location</h6></a>
+						<p>12505 SW North Dakota Street</p>
+						<p>Apartment #1910</p>
+						<p>Tigard, OR 97223 </p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="email text-center">
+						<span class="icon-sprite sprite-mail">&nbsp;</span>
+						<h6>Email</h6>
+						<p>csmusiclover@gmail.com</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="phone text-center">
+						<span class="icon-sprite sprite-phone2">&nbsp;</span>
+						<h6>Phone</h6>
+						<p>971-241-3746</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!--End of contact info-->
+	
+	<div id="openModalActive" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Active Buddy's</h2>
+			<p>Worked with local businessman to fix bugs and add features for his website, which serves to globally connect those who enjoy recreational activities. Built with PHP.</p>
+		</div>
+	</div>
+	
+	<div id="openModalCooking" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Cooking With Engineers</h2>
+			<p>Developed with team of 4 other students. Website is a social network where users could store, share, and rate cooking recipes. We used the Rails Framework which includes Ruby, Javascript, HTML, SCSS and PostgreSQL. During this time we were focusing heavily on the Agile development method over the Waterfall method. Most of the pictures (including for the background) are missing from the heroku site since they were done through a trial version of Amazon web services, as well as the database being out of date and not updated. But it gives an idea for what the site is.</p>
+		</div>
+	</div>
+	
+	<div id="openModalCorner" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>Casey's Corner</h2>
+			<p>This is a sample modal box that can be created using the powers of CSS3.</p>
+			<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+		</div>
+	</div>
+	
+	<div id="openModalVoGo" class="modalDialog">
+		<div>
+			<a href="#close" title="Close" class="close">X</a>
+			<h2>VoGo</h2>
+			<p>Built an Android Mobile Application that displays volunteer opportunities for a registered user. The opportunities (which are pulled from my database) are displayed in a list. I decided to build this app because through my life I've learned alot from volunteer experiences, and currently there isn't an Android app which shows local volunteer opportunities from multiple sources, so I decided to make one.</p>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
